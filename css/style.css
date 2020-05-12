@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+header {
+  width: 100%;
+  padding: 50px;
+  background-color: hsl(225, 100%, 98%);
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+nav {
+  width: 80%;
+  display: flex;
+}
+
+.pageTitle h2 {
+  font-weight: 700;
+}
+
+.pageTitle i {
+  font-weight: 400;
+}
+
+.darkModeToggle {
+  flex-wrap: wrap-reverse;
+}
+
+
+
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+}
+
+.attribution a {
+   color: hsl(228, 45%, 44%); 
+}
