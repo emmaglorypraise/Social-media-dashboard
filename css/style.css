@@ -8,32 +8,195 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   background-color: hsl(0, 0%, 100%);
+  
 }
 
 header {
   width: 100%;
-  padding: 50px;
+  padding: 60px;
+  height: 30vh;
   background-color: hsl(225, 100%, 98%);
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
 }
 
 nav {
-  width: 80%;
+  width: 84%;
   display: flex;
+  margin: auto;
+  justify-content: center;  
 }
+/* 
+.pageTitle {
+  margin-right: 50px;
+} */
 
 .pageTitle h2 {
+  font-size: 28px;
   font-weight: 700;
+  color: hsl(0, 0%, 0%);
 }
 
 .pageTitle i {
-  font-weight: 400;
+
+  font-weight: 700;
+  color: 	hsl(0, 0%, 50%);
 }
 
 .darkModeToggle {
-  flex-wrap: wrap-reverse;
+  display: flex;
+  margin-left: auto;
+  font-size: 25px;
+  color: hsl(0, 3%, 71%);
 }
+
+.toggleText {
+  font-size: 14px;
+  margin-top: 12px;
+  margin-left: 4px;
+}
+
+.toggleIcon {
+  top: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.toggleIcon:hover {
+ /* background-clip: text; */
+ /* background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%)); */
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.profileCards {
+  /* width: 80%; */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  z-index: -15;
+}
+
+.accountOwnersBlock {
+  width: 250px;
+  margin: 5px;
+  padding: 50px;
+  background-color: hsl(227, 47%, 96%);
+  border-top: 5px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2rem;
+}
+
+.accountOwnersBlock .username {
+  display: flex;
+  flex-direction: row;
+}
+
+.accountOwnersBlock .ownerSocialIcon h4 {
+  margin-top: 810px;
+}
+
+.username h4 {
+  padding-left: 4px;
+}
+
+.accountOwnersBlock .numberOfSubscribers {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 55px;
+}
+
+.accountOwnersBlock .followersText {
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(0, 3%, 71%);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+ .icon-up {
+  color: hsl(163, 72%, 41%);
+  font-size: 12px;
+  
+}
+
+
+.icon-down {
+  color: hsl(356, 69%, 56%);
+  font-size: 12px;
+  
+}
+
+.icon {
+  margin-bottom: 2px;
+}
+
+.facebookProfile {
+  border-color: hsl(195, 100%, 50%);
+}
+
+.twitterProfile {
+  border-color: hsl(203, 89%, 53%);
+}
+
+.instagramProfile {
+  width: 250px;
+  margin: 5px;
+  border-top: 5px solid transparent;
+  border-image: linear-gradient(to right, hsl(37, 97%, 70%),  hsl(329, 70%, 58%));
+  border-image-slice: 1;
+}
+
+.youtubeProfile {
+  border-color: hsl(348, 97%, 39%);
+}
+
+.subTitle {
+  color: hsl(0, 0%, 50%);
+  display: flex;
+  padding: 30px 160px 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.subSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.accountOverview {
+  width: 250px;
+  height: 120px;
+  margin: 5px;
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 5px;
+  line-height: 1rem;
+  padding: 20px;
+}
+
+.rows {
+  display: flex;
+  padding: 13px;
+  justify-content: space-between;
+}
+
+.rows .rowName {
+  color: hsl(0, 0%, 50%);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.rows .rowNumbers {
+  font-size: 32px;
+}
+
+
+
 
 
 
