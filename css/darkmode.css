@@ -7,7 +7,7 @@
 body {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(230, 17%, 14%);
   cursor: pointer;
   
 }
@@ -16,7 +16,7 @@ header {
   width: 100%;
   padding: 60px;
   height: 30vh;
-  background-color: hsl(225, 100%, 98%);
+  background-color: hsl(232, 19%, 15%);
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
 }
@@ -35,7 +35,7 @@ nav {
 .pageTitle h2 {
   font-size: 28px;
   font-weight: 700;
-  color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
 }
 
 .pageTitle i {
@@ -48,7 +48,7 @@ nav {
   display: flex;
   margin-left: auto;
   font-size: 25px;
-  color: hsl(0, 3%, 71%);
+  color: hsl(0, 0%, 100%);
 }
 
 .toggleText {
@@ -61,6 +61,7 @@ nav {
   top: 0;
   margin-top: 10px;
   margin-left: 10px;
+  color: hsl(0, 0%, 100%);
 }
 
 .toggleIcon:hover {
@@ -83,7 +84,7 @@ nav {
   width: 250px;
   margin: 5px;
   padding: 50px;
-  background-color: hsl(227, 47%, 96%);
+  background-color: hsl(228, 28%, 20%);
   border-top: 5px solid black;
   border-radius: 5px;
   display: flex;
@@ -100,6 +101,7 @@ nav {
 .accountOwnersBlock .username {
   display: flex;
   flex-direction: row;
+  color: hsl(228, 34%, 66%);
 }
 
 .accountOwnersBlock .ownerSocialIcon h4 {
@@ -114,12 +116,13 @@ nav {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 55px;
+  color: hsl(0, 0%, 100%);
 }
 
 .accountOwnersBlock .followersText {
   font-size: 18px;
   font-weight: 400;
-  color: hsl(0, 3%, 71%);
+  color: hsl(228, 34%, 66%);
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -162,7 +165,7 @@ nav {
 }
 
 .subTitle {
-  color: hsl(0, 0%, 50%);
+  color: hsl(0, 0%, 100%);
   display: flex;
   padding: 30px 160px 0;
   margin-bottom: 20px;
@@ -179,7 +182,7 @@ nav {
   width: 250px;
   height: 120px;
   margin: 5px;
-  background-color: hsl(227, 47%, 96%);
+  background-color: hsl(228, 28%, 20%);
   border-radius: 5px;
   line-height: 1rem;
   padding: 20px;
@@ -192,13 +195,14 @@ nav {
 }
 
 .rows .rowName {
-  color: hsl(0, 0%, 50%);
+  color: hsl(228, 34%, 66%);
   font-weight: 700;
   font-size: 14px;
 }
 
 .rows .rowNumbers {
   font-size: 32px;
+  color: hsl(0, 0%, 100%);
 }
 
 
@@ -210,8 +214,9 @@ nav {
 .attribution { 
   font-size: 11px; 
   text-align: center;
+  color: hsl(228, 34%, 66%);
 }
 
 .attribution a {
-   color: hsl(228, 45%, 44%); 
+   color: hsl(0, 0%, 100%); 
 }
