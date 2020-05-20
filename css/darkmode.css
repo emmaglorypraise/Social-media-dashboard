@@ -32,6 +32,10 @@ nav {
   margin-right: 50px;
 } */
 
+hr {
+  display: none;
+}
+
 .pageTitle h2 {
   font-size: 28px;
   font-weight: 700;
@@ -41,7 +45,7 @@ nav {
 .pageTitle i {
 
   font-weight: 700;
-  color: 	hsl(0, 0%, 50%);
+  color: hsl(228, 34%, 66%);
 }
 
 .darkModeToggle {
@@ -55,6 +59,7 @@ nav {
   font-size: 14px;
   margin-top: 12px;
   margin-left: 4px;
+  color: hsl(228, 34%, 66%);
 }
 
 .toggleIcon {
@@ -62,6 +67,7 @@ nav {
   margin-top: 10px;
   margin-left: 10px;
   color: hsl(0, 0%, 100%);
+
 }
 
 .toggleIcon:hover {
@@ -75,9 +81,10 @@ nav {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 0;
+  top: -40px;
   bottom: 0;
-  z-index: -15;
+  
+  
 }
 
 .accountOwnersBlock {
@@ -93,9 +100,10 @@ nav {
   line-height: 2rem;
 }
 
-.accountOwnersBlock:hover {
-  /* background-color: grey; */
-  opacity: 0.2;
+.accountOwnersBlock:hover, .accountOverview:hover {
+  background-color: #dcdee4;
+  opacity: 0.7;
+  
 }
 
 .accountOwnersBlock .username {
@@ -110,6 +118,7 @@ nav {
 
 .username h4 {
   padding-left: 4px;
+  
 }
 
 .accountOwnersBlock .numberOfSubscribers {
@@ -204,6 +213,79 @@ nav {
   font-size: 32px;
   color: hsl(0, 0%, 100%);
 }
+
+
+
+/* media queries */
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    height: 50vh;
+  }
+  nav {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+  }
+  .profileCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .accountOwnersBlock, .accountOverview {
+    width: 359px;
+    margin-bottom: 15px;
+  }
+
+  .subTitle {
+    margin: 0;
+    padding: 30px 50px 0;
+  }
+
+  .subSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .darkModeToggle {
+    justify-items: space-between;
+    margin-right: 250px;
+    
+  }
+
+  .pageTitle h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+  .pageTitle i {
+  
+    font-weight: 700;
+    color: hsl(228, 34%, 66%);
+  }
+
+  hr {
+    display: block;
+    margin: 30px 0 10px;
+  }
+
+  
+.toggleText {
+  font-size: 10px;
+  margin-top: 12px;
+  margin-left: 4px;
+}
+
+.toggleIcon {
+  top: 0;
+  margin-top: 12px;
+  margin-left: 10px;
+  padding-left: 250px;
+}
+}
+
+
 
 
 

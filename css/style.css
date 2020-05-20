@@ -19,6 +19,7 @@ header {
   background-color: hsl(225, 100%, 98%);
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
+  
 }
 
 nav {
@@ -27,10 +28,6 @@ nav {
   margin: auto;
   justify-content: center;  
 }
-/* 
-.pageTitle {
-  margin-right: 50px;
-} */
 
 .pageTitle h2 {
   font-size: 28px;
@@ -42,6 +39,10 @@ nav {
 
   font-weight: 700;
   color: 	hsl(0, 0%, 50%);
+}
+
+hr {
+  display: none;
 }
 
 .darkModeToggle {
@@ -74,15 +75,16 @@ nav {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 0;
+  top: -40px;
   bottom: 0;
-  z-index: -15;
+
+  
 }
 
 .accountOwnersBlock {
   width: 250px;
   margin: 5px;
-  padding: 50px;
+  padding: 35px;
   background-color: hsl(227, 47%, 96%);
   border-top: 5px solid black;
   border-radius: 5px;
@@ -92,9 +94,10 @@ nav {
   line-height: 2rem;
 }
 
-.accountOwnersBlock:hover {
-  /* background-color: grey; */
-  opacity: 0.2;
+.accountOwnersBlock:hover, .accountOverview:hover {
+  background-color: #373f62;
+  opacity: 0.7;
+  
 }
 
 .accountOwnersBlock .username {
@@ -150,11 +153,19 @@ nav {
 }
 
 .instagramProfile {
+  overflow: hidden;
+}
+.instagramProfile::after {
   width: 250px;
   margin: 5px;
-  border-top: 5px solid transparent;
-  border-image: linear-gradient(to right, hsl(37, 97%, 70%),  hsl(329, 70%, 58%));
-  border-image-slice: 1;
+  border: 5px solid ;
+  -o-border-image: linear-gradient(to right, hsl(37, 97%, 70%),  hsl(329, 70%, 58%) 1);
+  border-image: linear-gradient(to right, hsl(37, 97%, 70%),  hsl(329, 70%, 58%) 1);
+  /* border-image-slice: 1; */
+  border-radius: 5px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
 
 .youtubeProfile {
@@ -166,7 +177,7 @@ nav {
   display: flex;
   padding: 30px 160px 0;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .subSection {
@@ -201,6 +212,75 @@ nav {
   font-size: 32px;
 }
 
+
+/* media queries */
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    height: 50vh;
+  }
+  nav {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+  }
+  .profileCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .accountOwnersBlock, .accountOverview {
+    width: 359px;
+    margin-bottom: 15px;
+  }
+
+  .subTitle {
+    margin: 0;
+    padding: 30px 30px 0;
+  }
+
+  .subSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .darkModeToggle {
+    justify-items: space-between;
+    margin-right: 250px;
+    
+  }
+
+  .pageTitle h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(0, 0%, 0%);
+  }
+  
+  .pageTitle i {
+  
+    font-weight: 700;
+    color: 	hsl(0, 0%, 50%);
+  }
+
+  hr {
+    display: block;
+    margin: 30px 0 10px;
+  }
+
+  
+.toggleText {
+  font-size: 10px;
+  margin-top: 12px;
+  margin-left: 4px;
+}
+
+.toggleIcon {
+  top: 0;
+  margin-top: 12px;
+  margin-left: 10px;
+  padding-left: 250px;
+}
+}
 
 
 
