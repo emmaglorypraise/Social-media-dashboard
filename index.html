@@ -8,8 +8,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Social Media Dashboard by Glory Praise</title>
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
-  <link rel="stylesheet" href="css/darkmode.css">
+  <link rel="stylesheet" href="css/style.css" id="lightmode">
+  <link rel="stylesheet" href="css/darkmode.css" id="darkmode">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   
@@ -29,7 +29,7 @@
       <hr>
       <div class="darkModeToggle">
         <h4 class="toggleText">Dark Mode</h4>
-        <i class="fa fa-toggle-on fa-lg toggleIcon" aria-hidden="true"></i>
+        <i id="toggle-icon" class="fa fa-toggle-on fa-lg toggleIcon" aria-hidden="true"></i>
       </div>
     </nav>
   </header>
@@ -275,5 +275,6 @@
   </div>
 
   <script src="https://use.fontawesome.com/ad17ba1b43.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

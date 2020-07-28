@@ -153,15 +153,13 @@ hr {
 }
 
 .instagramProfile {
-  overflow: hidden;
-}
-.instagramProfile::after {
   width: 250px;
   margin: 5px;
-  border: 5px solid ;
-  -o-border-image: linear-gradient(to right, hsl(37, 97%, 70%),  hsl(329, 70%, 58%) 1);
-  border-image: linear-gradient(to right, hsl(37, 97%, 70%),  hsl(329, 70%, 58%) 1);
-  /* border-image-slice: 1; */
+  border: 5px solid transparent;
+  /* -o-border-image: linear-gradient(to right, hsl(37, 97%, 70%),  hsl(329, 70%, 58%) 1); */
+  background-image: linear-gradient(to right, hsl(37, 97%, 70%),  hsl(329, 70%, 58%) 1);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
   border-radius: 5px;
   border-bottom: none;
   border-left: none;
