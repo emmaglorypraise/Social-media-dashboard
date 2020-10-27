@@ -8,27 +8,122 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   background-color: hsl(0, 0%, 100%);
-  cursor: pointer;
-  
 }
 
 header {
   width: 100%;
-  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 40px auto 40px;
+}
+
+nav{
   height: 100%;
   background-color: hsl(225, 100%, 98%);
+  padding: 10px;
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
-  
 }
 
 main{
   margin-top: -40px;
 }
 
-/* nav {
-   
-} */
+.dark-mode {
+  background-color: hsl(230, 17%, 14%);
+}
+
+.dark-mode .accountOwnersBlock:hover,
+.dark-mode .accountOverview:hover {
+  background-color: #1b1d26;
+  opacity: 0.9;
+  
+}
+
+.dark-mode hr{
+  display: block;
+  background-color: #ffffff;
+}
+
+.dark-mode .pageTitle h2,
+.dark-mode .subTitle{
+  color: hsl(0, 0%, 100%);
+}
+
+.dark-mode .numberOfSubscribers,
+.dark-mode .rowNumbers {
+ color:  hsl(225, 100%, 98%);
+}
+ 
+.dark-mode .accountOwnersBlock .followersText,
+.dark-mode .pageTitle i,
+.dark-mode .toggleText,
+.dark-mode .username h4,
+.dark-mode .rows .rowName{
+  color:  hsl(228, 34%, 66%);
+  
+}
+
+.dark-mode nav,
+.dark-mode body,
+.dark-mode .header,
+.dark-mode .accountOwnersBlock,
+.dark-mode .accountOverview {
+  background: hsl(228, 28%, 20%);
+}
+
+.dark-mode .attribution { 
+  color: hsl(228, 34%, 66%);
+}
+
+.dark-mode .attribution a {
+   color: hsl(0, 0%, 100%); 
+}
+
+.dark-mode-switch button {
+  position: relative;
+  width: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.switch-contain {
+  position: absolute;
+  top: -10px;
+}
+
+.switch {
+  width: 40px;
+  height: 20px;
+  background-color:  hsl(228, 12%, 44%);
+  border-radius: 20px;
+  padding: 1px;
+  transition: all 300ms ease-in-out;
+}
+
+.switch.active {
+  background-image: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.switch.active .switch-btn {
+  margin-left: 18.5px;
+  transition: all 300ms ease-in-out;
+}
+
+.switch-btn {
+  width: 19.5px;
+  height: 17.5px;
+  background-color:  hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
 
 .pageTitle h2 {
   font-size: 25px;
@@ -44,27 +139,19 @@ main{
 hr {
   display: block;
   width: 100%;
-  /* height: 10px; */
   color: #373f62;
 }
 
 .darkModeToggle {
   display: flex;
-  margin-left: auto;
   font-size: 25px;
   color: hsl(0, 3%, 71%);
 }
 
 .toggleText {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 12px;
   margin-left: 4px;
-}
-
-.toggleIcon {
-  top: 0;
-  margin-top: 10px;
-  margin-left: 10px;
 }
 
 .accountOwnersBlock {
@@ -82,9 +169,8 @@ hr {
 }
 
 .accountOwnersBlock:hover, .accountOverview:hover {
-  background-color: #373f62;
+  background-color: #dddee6;
   opacity: 0.7;
-  
 }
 
 .accountOwnersBlock .username {
@@ -115,14 +201,11 @@ hr {
  .icon-up {
   color: hsl(163, 72%, 41%);
   font-size: 12px;
-  
 }
-
 
 .icon-down {
   color: hsl(356, 69%, 56%);
   font-size: 12px;
-  
 }
 
 .icon {
@@ -136,12 +219,20 @@ hr {
 .twitterProfile {
   border-color: hsl(203, 89%, 53%);
 }
-
+.insta-curve{
+  max-width: 350px;
+  min-width: 160px;
+  margin: auto;
+  height: 5px;
+  background: linear-gradient(to right, hsl(37, 97%, 70%),  hsl(329, 70%, 58%));
+  border-radius: 5%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
 .instagramProfile {
-  border-top: 5px solid transparent;
-  border-image: linear-gradient(to right, hsl(37, 97%, 70%),  hsl(329, 70%, 58%));
-  border-image-slice: 1;
- 
+  border-top: 0px solid transparent;
+  /* border-image: linear-gradient(to right, hsl(37, 97%, 70%),  hsl(329, 70%, 58%)); */
+  /* border-image-slice: 1; */
 }
 
 .youtubeProfile {
@@ -156,7 +247,7 @@ hr {
 
 .accountOverview {
   max-width: 350px;
-  min-width: 200px;
+  min-width: 170px;
   height: 140px;
   margin: 0px auto 10px;
   background-color: hsl(227, 47%, 96%);
@@ -184,17 +275,23 @@ hr {
 
 /* Media queries */
 @media(min-width: 768px){
-  hr {
+ .dark-mode hr {
+    display: none;
+  }
+
+  hr{
     display: none;
   }
   main{
-    margin-top: -20px;
+    margin-top: -40px;
   }
-  nav {
+
+  header {
+    width: 100%;
     display: flex;
-    /* margin: auto; */
     flex-direction: row;
-    justify-content: center;  
+    height: 100%;
+    margin: 40px auto 70px;
   }
   
 .pageTitle h2 {
@@ -206,6 +303,7 @@ hr {
 .pageTitle i {
   font-weight: 700;
   color: 	hsl(0, 0%, 50%);
+  margin-bottom: 30px;
 }
 
 .darkModeToggle {
@@ -213,6 +311,7 @@ hr {
   margin-left: auto;
   font-size: 25px;
   color: hsl(0, 3%, 71%);
+  /* margin-top: -140px; */
 }
 
 .toggleText {
@@ -220,14 +319,7 @@ hr {
   margin-top: 12px;
   margin-left: 4px;
 }
-
-.toggleIcon {
-  top: 0;
-  margin-top: 10px;
-  margin-left: 10px;
 }
-}
-
 
 .attribution { 
   font-size: 11px; 

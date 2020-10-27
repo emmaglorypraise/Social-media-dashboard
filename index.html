@@ -10,16 +10,14 @@
   <title>Frontend Mentor | Social Media Dashboard by Glory Praise</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css" id="lightmode">
-  <link rel="stylesheet" href="css/darkmode.css" id="darkmode">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   
 </head>
 <body>
-
-  <header>
+  <nav>
     <div class="container">
-     <nav>
+      <header>
       <div class="pageTitle">
         <h2 >
           Social Media Dashboard
@@ -30,13 +28,21 @@
       </div>
       <hr>
       <div class="darkModeToggle">
-        <h4 class="toggleText">Dark Mode</h4>
-        <i id="toggle-icon" class="fa fa-toggle-on fa-lg toggleIcon" aria-hidden="true"></i>
+        <div class="flex dark-mode-switch ">
+          <p class="toggleText ">Dark Mode</p>
+          <button onclick="myFunction()">
+              <div class="switch-contain">
+                  <div class="switch" onclick="this.classList.toggle('active')">
+                      <div class="switch-btn"></div>
+                  </div>
+          </button>
       </div>
-    </nav> 
-  </div>
-  </header>
+      </div>
+      </header>
+    </div>
+  </nav> 
   
+
   <main>
     <section class="profileCards">
     <div class="container">
@@ -82,6 +88,7 @@
         </div>
         </div>
         <div class="col-md-3">
+          <div class="insta-curve"></div>
           <div class="accountOwnersBlock instagramProfile">
             <div class="username">
             <i><img src="images/icon-instagram.svg" class="ownerSocialIcon" alt="icon-instagram"></i>
